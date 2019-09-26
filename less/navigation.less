@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+.nav-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  height: 8.4rem;
+  .displayFlex();
+  align-items: center;
+
+  h1 {
+    .widthFifty();
+  }
+
+  nav {
+    .widthFifty();
+    .displayFlex();
+    .flexPosition(flex-end, inherit);
+
+    a {
+      margin-right: 2.9rem;
+      text-decoration: none;
+      color: black;
+      font-size: 1.75rem;
+    }
+  }
+}
