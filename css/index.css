@@ -260,3 +260,13 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  width: 20rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  border: solid;
+  font-weight: bold;
+}
