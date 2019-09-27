@@ -11,6 +11,16 @@
 
       h2 {
         margin-top: 2rem;
+        
+        @media @mobile {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        @media @mobile {
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -21,19 +31,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
+
+      p {
+        @media @mobile {
+          font-size: 1.4rem;
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
+
       }
     }
   }
@@ -41,6 +74,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      .displayFlex();
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -50,12 +88,23 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
+    }    
   }
 
+  
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    p {
+      @media @mobile {
+        font-size: 1.4rem;
+      }
+    }
 
     img {
       border-radius: 10px;
@@ -68,12 +117,40 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 84%;
+        margin: 2rem auto 0 auto;
+
+        &:first-child {
+          margin-top: 0; 
+        }
+
+        &:last-child {
+          margin-bottom: 2rem;
+        }
+
+      }
+
+      p {
+        @media @mobile {
+          font-size: 1.4rem;
+        }
+      }
+
       .btn {
         .btnStyle(20rem, 4.4rem, @eastern-blue, @white, bold);
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }

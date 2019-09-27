@@ -8,8 +8,23 @@
   .displayFlex();
   align-items: center;
 
+  @media @mobile {
+    max-width: 500px;
+    display: inline-block;
+    // width: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 1rem;
+  }
+
   h1 {
     .widthFifty();
+    
+    @media @mobile {
+      width: 100%;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
   }
 
   nav {
@@ -17,11 +32,24 @@
     .displayFlex();
     .flexPosition(flex-end, inherit);
 
+    @media @mobile {
+      width: 100%;
+      .flexPosition(space-around, inherit);
+      margin-top: 1rem;
+    }
+
     a {
       margin-right: 2.9rem;
       text-decoration: none;
       color: black;
       font-size: 1.75rem;
+
+      @media @mobile {
+        font-size: 1.50rem;
+        margin-right: 0;
+        // font-weight: 400;
+      }
+
     }
   }
 }
